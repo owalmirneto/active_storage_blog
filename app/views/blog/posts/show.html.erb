@@ -5,6 +5,9 @@
   <%= @blog_post.title %>
 </p>
 
+<%= link_to 'Ver arquivo', @blog_post.file %> ou
+<%= link_to 'Baixar arquivo', @blog_post.file, download: '' %>
+
 <p>
   <strong>Description:</strong>
   <%= @blog_post.description %>
